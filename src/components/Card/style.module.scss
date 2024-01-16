@@ -1,0 +1,91 @@
+
+
+.card{
+  display: block;
+  padding: 80px 0;
+}
+.mTitle{
+  margin-bottom: 24px;
+  color: $lowCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 135%;
+}
+.body{
+  display: flex;
+  border-top: 1px solid $border-color;
+  position: relative;
+  &::after{
+    content: '';
+    clear: both;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    background: $border-color;
+  }
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.wrapper{
+  padding: 40px;
+  &:nth-child(2){
+    background: $red-default;
+    .rTitle{
+      color: $white;
+    }
+    .list{
+      display: grid;
+      gap: 12px;
+      li{
+        color: $white;
+      }
+    }
+  }
+}
+.title{
+  color: $upCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'VisbyCF';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105%;
+  margin: 40px 0 auto 0;
+}
+.rTitle{
+  color: $lowCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.list{
+  margin-top: 16px;
+  margin-bottom: 56px;
+  list-style: none;
+  li{
+    color: $white;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "VisbyCF";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 135%;
+  }
+}
+.text{
+  color: $lowCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 135%;
+  margin: 16px 0;
+}

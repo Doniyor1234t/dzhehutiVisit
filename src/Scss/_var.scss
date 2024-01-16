@@ -1,0 +1,19 @@
+:root{
+  --bg-page:#fff;
+  --bg-button:#17232C;
+  --upCase-color:#303A4F;
+  --lowCase-color:#445371;
+  --button-bg:#0E1117;
+  --red-default:#F43F5E;
+  --white:#FFF;
+  --border-color:rgba(68, 83, 113, 0.50);
+}
+
+$bg-button:var(--bg-button);
+$bg-page:var(--bg-page);
+$upCase-color:var(--upCase-color);
+$lowCase-color:var(--lowCase-color);
+$button-bg:var(--button-bg);
+$red-default:var(--red-default);
+$white:var(--white);
+$border-color:var(--border-color);

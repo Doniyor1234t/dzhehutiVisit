@@ -1,0 +1,21 @@
+@import "./fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+}
+body{
+  font-family: "VisbyCf";
+  background: $bg-page;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 105%;
+  color: $upCase-color;
+}
