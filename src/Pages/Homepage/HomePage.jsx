@@ -2,6 +2,9 @@ import MainLand from "../../components/Main/Main"
 import MainImg from "../../components/MainImg/MainImg"
 import Result from "../../components/Result/Result"
 import CardWrapper from "../../components/Card/CardWrapper.jsx"
+import Client from "../../components/Clients/ClientSection.jsx"
+import Benif from "../../components/Benefits/Benefits.jsx"
+import Slider from "../../components/SliderOpinion/Slider.jsx"
 
 const HomePage = () => {
   return (
@@ -10,6 +13,9 @@ const HomePage = () => {
       <MainImg/>
       <Result/>
       <CardWrapper/>
+      <Client/>
+      <Benif />
+      <Slider />
     </>
   )
 }

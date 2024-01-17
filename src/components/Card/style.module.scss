@@ -35,6 +35,7 @@
 }
 .wrapper{
   padding: 40px;
+  height: 346px;
   &:nth-child(2){
     background: $red-default;
     .rTitle{
@@ -68,8 +69,8 @@
   line-height: 120%;
 }
 .list{
+
   margin-top: 16px;
-  margin-bottom: 56px;
   list-style: none;
   li{
     color: $white;

@@ -1,0 +1,200 @@
+.benifs{
+  margin: 80px 0;
+}
+.body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid $border-color;
+  position: relative;
+  &::after{
+    content:"";
+    width: 100%;
+    height: 1px;
+    background: $border-color;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 12;
+  }
+  &::before{
+    content:"";
+    height: 100%;
+    width: 1px;
+    background: $border-color;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 12;
+  }
+}
+.Xlines{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  &::after{
+    content:"";
+    width: 1508px;
+    transform: translate(-50%,-50%) rotate(32.069715284deg);
+    height: 1px;
+    background: $border-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  &::before{
+    content:"";
+    width: 1508px;
+    transform: translate(-50%,-50%) rotate(-32.069715284deg);
+    height: 1px;
+    background: $border-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}
+.box{
+  min-width: 640px;
+  min-height: 400px;
+  display: flex;
+  position: relative;
+  z-index: 11;
+  &:hover{
+    &:nth-child(2){
+      .image{
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+    &:nth-child(3){
+      .image{
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+    &:nth-child(4){
+      .image{
+        top: 20px;
+        right: 20px;
+      }
+    }
+    &:nth-child(5){
+      .image{
+        top: 20px;
+        left: 20px;
+      }
+    }
+    .image{
+      // display: block;
+      opacity: 1;
+    }
+    .quarCircle{
+      position: relative;
+      background: $red-default;
+      span{
+        color: $white;
+      }
+    }
+  }
+  .image{
+    position: absolute;
+    min-width: 500px;
+    height: 346px;
+    z-index: -1;
+    display: block;
+    opacity: 0;
+    transition: all .6s ease;
+  }
+  &:nth-child(2){
+    .image{
+      transition: all .6s ease;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &:nth-child(3){
+    .image{
+      bottom: 0;
+      left: 0;
+    transition: all .6s ease;
+    }
+  }
+  &:nth-child(4){
+    .image{
+      top: 0;
+      right: 0;
+    transition: all .6s ease;
+    }
+  }
+  &:nth-child(5){
+    .image{
+      top: 0;
+      left: 0;
+    transition: all .6s ease;
+    }
+  }
+}
+.quarCircle{
+  width: 280px;
+  height: 280px;
+  position: relative;
+  z-index: 10;
+  background: $white;
+  transition: all .6s ease;
+  overflow: visible;
+  span{
+    transition: all .6s ease;
+    color: $lowCase-color;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "VisbyCF";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 135%; /* 29.7px */
+    display: block;
+    position: absolute;
+    z-index: 100;
+    min-width: 184px;
+  }
+  &1{
+    z-index: 100;
+    border-radius:  100% 0 0 0;
+    margin: auto 0 0 auto;
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    span{
+      bottom: 70px;
+      right: 24px;
+    }
+  }
+  &2{
+    border-radius:  0 100% 0 0;
+    margin: auto auto 0 0;
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    span{
+      bottom: 70px;
+      left: 24px;
+    }
+  }
+  &3{
+    border-radius:  0 0 0 100% ;
+    margin: 0 0 auto auto;
+    border-bottom: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    span{
+      top: 70px;
+      right: 24px;
+    }
+  }
+  &4{
+    border-radius:  0 0 100% 0  ;
+    margin: 0 auto auto 0;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    span{
+      top: 70px;
+      left: 24px;
+    }
+  }
+}

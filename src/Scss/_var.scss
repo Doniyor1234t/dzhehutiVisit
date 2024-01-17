@@ -1,5 +1,6 @@
 :root{
   --bg-page:#fff;
+  --bg--dark:#181D28;
   --bg-button:#17232C;
   --upCase-color:#303A4F;
   --lowCase-color:#445371;
@@ -7,6 +8,7 @@
   --red-default:#F43F5E;
   --white:#FFF;
   --border-color:rgba(68, 83, 113, 0.50);
+  --revers-font:#ECEEF1;
 }
 
 $bg-button:var(--bg-button);
@@ -17,3 +19,5 @@ $button-bg:var(--button-bg);
 $red-default:var(--red-default);
 $white:var(--white);
 $border-color:var(--border-color);
+$bg-dark:var(--bg--dark);
+$revers-font:var(--revers-font);

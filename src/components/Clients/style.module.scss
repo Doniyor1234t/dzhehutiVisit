@@ -1,0 +1,41 @@
+.client{
+  background: $bg-dark;
+  margin: 80px 0;
+}
+.body{
+  width: 100%;
+  padding: 80px 0 50px 0;
+}
+.content{
+  text-align: center;
+  max-width: 482px;
+  margin: 0 auto 40px auto;
+}
+.title{
+  color: $revers-font;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 105%; /* 50.4px */
+  margin-bottom: 16px;
+}
+.text{
+  color: #A1A9B8;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  img{
+    max-width: 240px;
+    max-height: 160px;
+  }
+}

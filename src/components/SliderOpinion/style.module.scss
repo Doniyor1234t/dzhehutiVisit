@@ -1,0 +1,59 @@
+.slide{
+  width: 515px;
+  height: 360px;
+}
+
+.slideBody{
+  overflow: visible;
+}
+.swiper{
+  overflow: visible;
+}
+
+.slide{
+  padding: 40px;
+  border: 1px solid $border-color;
+}
+.comment{
+  overflow: hidden;
+  color: $lowCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  text-overflow: ellipsis;
+  font-family: "VisbyCF";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 135%; /* 29.7px */
+}
+.profile{
+  display: flex;
+  margin-top: 66px;
+  align-items: center;
+  gap: 16px;
+}
+.avatar{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.fullName{
+  color: $lowCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%; /* 26.4px */
+}
+.brandName{
+  color: $lowCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 135%; /* 24.3px */
+}
+.buttonPrev{
+  padding: 20px;
+}
+.buttonNext{
+  padding: 20px;
+}
