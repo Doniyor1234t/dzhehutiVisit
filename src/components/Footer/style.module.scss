@@ -1,3 +1,102 @@
 .footer{
-  
+  position: relative;
+  z-index: 20;
+  background: $bg-dark;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 43%;
+    height: 1px;
+    width: 100%;
+    background: $border-color;
+    z-index: 10;
+  }
+}
+.body{
+  display: flex;
+  justify-content: space-between;
+}
+.formSide{
+  padding-bottom: 104px;
+}
+.left{
+  max-width: 515px;
+  padding: 80px 0 104px 0;
+}
+.title{
+  color: $revers-font;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 120%; 
+}
+.checkbox{
+  display: flex;
+  color: #A1A9B8;
+  align-items: start;
+  gap: 8px;
+  span{
+    display: block;
+    color:  #A1A9B8;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "VisbyCF";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    a{
+      text-decoration-line: underline;
+    }
+  }
+}
+.logo{
+  margin-top: 224px;
+  svg{
+    width: 437px;
+  }
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 90px;
+  border-left: 1px solid $border-color;
+  padding: 80px 0 104px 80px;
+}
+
+.box{
+  display: flex;
+  gap: 40px;
+}
+.menu{
+  width: 200px;
+}
+.label{
+  margin-bottom: 24px;color: #858FA3;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+}
+.list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.text{
+  color:  #ECEEF1;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
+  margin-top: 80px;
 }

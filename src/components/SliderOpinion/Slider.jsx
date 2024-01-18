@@ -6,8 +6,7 @@ import profiles from './profildb'
 
 import { Container, Icon } from "@chakra-ui/react"
 import {Swiper,SwiperSlide} from "swiper/react"
-import 'swiper/css';
-import 'swiper/css/navigation';
+// import 'swiper/css';
 const Slider = () => {
   
   return (
@@ -15,27 +14,28 @@ const Slider = () => {
       <Container maxW="1312px">
           <div className={cls.slideHead}>
             <h3 className={cls.title}>Нам доверяют</h3>
+            <div className={cls.navigation}>
+              <button className="swiper-button image-swiper-button-prev">
+                <Icon className={'icon'} as={GoArrowLeft} h={'24px'} w={'24px'}/>
+              </button>
+              <button className="swiper-button image-swiper-button-next">
+                <Icon className={'icon'} as={GoArrowRight} h={'24px'} w={'24px'}/>
+              </button>
+            </div>
           </div>
         <Swiper
           modules={[Navigation]}
           slidesPerView={2.5}
           navigation={{
-            nextEl: 'nextArr',
-            prevEl: 'prevArr'
+            nextEl: ".image-swiper-button-next",
+            prevEl: ".image-swiper-button-prev",
+            disabledClass: "swiper-button-disabled"
           }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
           className={cls.slideBody}
           watchOverflow={false}
         >
-        <div className={cls.navigation}>
-          <button className={`prevArr`}>
-            <Icon as={GoArrowLeft} h={'24px'} w={'24px'}/>
-          </button>
-          <button className={`nextArr`}>
-            <Icon as={GoArrowRight} h={'24px'} w={'24px'}/>
-          </button>
-        </div>
           {profiles.map((profile) => {
             return (
               <SwiperSlide className={cls.slide} key={profile.id}>

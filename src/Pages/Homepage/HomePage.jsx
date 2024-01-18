@@ -5,6 +5,8 @@ import CardWrapper from "../../components/Card/CardWrapper.jsx"
 import Client from "../../components/Clients/ClientSection.jsx"
 import Benif from "../../components/Benefits/Benefits.jsx"
 import Slider from "../../components/SliderOpinion/Slider.jsx"
+import Faqs from "../../components/Faqs/Faqs.jsx"
+import Finall from "../../components/Finall/Finall.jsx"
 
 const HomePage = () => {
   return (
@@ -16,6 +18,8 @@ const HomePage = () => {
       <Client/>
       <Benif />
       <Slider />
+      <Faqs />
+      <Finall />
     </>
   )
 }

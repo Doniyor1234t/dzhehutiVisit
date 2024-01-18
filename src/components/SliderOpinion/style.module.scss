@@ -1,11 +1,36 @@
+.slideSection{
+  padding: 80px 0;
+}
+
+.slideHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.title{
+  color: $upCase-color;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "VisbyCF";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105%; 
+  margin-bottom: 24px;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  fill: $border-color;
+}
+
 .slide{
   width: 515px;
   height: 360px;
 }
 
-.slideBody{
-  overflow: visible;
-}
 .swiper{
   overflow: visible;
 }

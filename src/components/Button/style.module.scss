@@ -32,3 +32,9 @@
     font-weight: 600;
   }
 }
+.dark{
+  background: $white;
+  .label{
+    color: #181D28;
+  }
+}
